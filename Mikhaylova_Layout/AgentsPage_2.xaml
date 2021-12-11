@@ -1,0 +1,95 @@
+﻿<Page x:Class="Mikhaylova_Layout.AgentsPage_2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Mikhaylova_Layout"
+      mc:Ignorable="d" 
+            d:DesignHeight="450" d:DesignWidth="600"
+      Title="AgentsPage_2" FontFamily="Comic Sans MS">
+
+    <Grid>
+        <Grid x:Name="Content" Margin="0,0,0,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Row="0" Grid.Column="0" Text="Введите для поиска" Margin="0,0,0,0"></TextBox>
+            <ComboBox Grid.Row="0" Grid.Column="1" Width="180" Text="Сортировка" HorizontalAlignment="Right" Name="FilterCmb">
+                <ComboBoxItem Content="Наименование"/>
+                <ComboBoxItem Content="Продажи"/>
+                <ComboBoxItem Content="Приоритетность"/>
+            </ComboBox>
+            <ComboBox Grid.Row="0" Grid.Column="2" Width="180" HorizontalAlignment="Center" Name="SortCmb">
+                <ComboBoxItem Content="10%"/>
+                <ComboBoxItem Content="15%"/>
+                <ComboBoxItem Content="20%"/>
+            </ComboBox>
+            <Grid x:Name="ContentRow_2" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Source="Resources/picture.png" Grid.Row="0" HorizontalAlignment="Center" Grid.RowSpan="4" Margin="3,3,3,3"></Image>
+                <Label Grid.Row="0" Grid.Column="1" Margin="20,0,0,0" Content="Тип | Наименование" HorizontalAlignment="Left" Foreground="#F9969E" FontSize="14px" VerticalContentAlignment="Center"></Label>
+                <Label Grid.Row="1" Grid.Column="1" Margin="20,0,0,0" Content="20 продаж за год" HorizontalAlignment="Left"  FontSize="12px"></Label>
+                <Label Grid.Row="2" Grid.Column="1" Margin="20,0,0,0" Content="+7 3333 111 11 11" HorizontalAlignment="Left"  FontSize="12px"></Label>
+                <Label Grid.Row="3" Grid.Column="1" Margin="20,0,0,0" Content="Приоритетность: 10" HorizontalAlignment="Left"  FontSize="12px"></Label>
+                <Label Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" Content="10%" FontSize="25px" HorizontalAlignment="Right" Margin="0,0,10,0"></Label>
+            </Grid>
+            <Grid x:Name="ContentRow_3" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Source="Resources/picture.png" Grid.Row="0" Grid.RowSpan="4" Margin="3,3,3,3"></Image>
+                <Label Grid.Row="0" Grid.Column="1" Margin="20,0,0,0" Content="Тип | Наименование  " Foreground="#F9969E" FontSize="14px" VerticalContentAlignment="Center"></Label>
+                <Label Grid.Row="1" Grid.Column="1" Margin="20,0,0,0" Content="40 продаж за год" FontSize="12px"></Label>
+                <Label Grid.Row="2" Grid.Column="1" Margin="20,0,0,0" Content="+7 4222 111 11 11"  FontSize="12px"></Label>
+                <Label Grid.Row="3" Grid.Column="1" Margin="20,0,0,0" Content="Приоритетность: 40"  FontSize="12px"></Label>
+                <Label Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" Content="40%"  FontSize="25px" HorizontalAlignment="Right" Margin="0,0,10,0"></Label>
+            </Grid>
+            <Grid x:Name="ContentRow_4" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Image Source="Resources/picture.png" Grid.Row="0" Grid.RowSpan="4" Margin="3,3,3,3"></Image>
+                <Label Grid.Row="0" Grid.Column="1" Margin="20,0,0,0" Content="Тип | Наименование  " Foreground="#F9969E" FontSize="14px" VerticalContentAlignment="Center"></Label>
+                <Label Grid.Row="1" Grid.Column="1" Margin="20,0,0,0" Content="10 продаж за год"  FontSize="12px"></Label>
+                <Label Grid.Row="2" Grid.Column="1" Margin="20,0,0,0" Content="+7 1111 111 11 11"  FontSize="12px"></Label>
+                <Label Grid.Row="3" Grid.Column="1" Margin="20,0,0,0" Content="Приоритетность: 10"  FontSize="12px"></Label>
+                <Label Grid.Row="0" Grid.Column="3" Grid.RowSpan="3" Content="10%"  FontSize="25px" HorizontalAlignment="Right" Margin="0,0,10,0"></Label>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
